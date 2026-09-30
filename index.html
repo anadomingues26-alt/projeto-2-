@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo da Química</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>🧪 Mundo da Química</h1>
+        <p>A ciência que estuda a matéria e suas transformações</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="#introducao">O que é?</a>
+        <a href="#ramos">Ramos</a>
+        <a href="#curiosidades">Curiosidades</a>
+        <a href="#pesquisa">Elemento Secreto</a>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+
+        <!-- Seção: Introdução -->
+        <section id="introducao" class="card">
+            <h2>O que é Química?</h2>
+            <p>A Química é a ciência natural que estuda a matéria, suas propriedades, constituição, transformações e a energia envolvida nesses processos. Tudo ao nosso redor — o ar que respiramos, a água que bebemos e até o nosso próprio corpo — é feito de química!</p>
+        </section>
+
+        <!-- Seção: Ramos da Química -->
+        <section id="ramos" class="card">
+            <h2>Principais Ramos da Química</h2>
+            <ul>
+                <li><strong>Química Orgânica:</strong> Estuda os compostos contendo carbono.</li>
+                <li><strong>Química Inorgânica:</strong> Foca nos elementos e compostos não orgânicos (como minerais e metais).</li>
+                <li><strong>Físico-Química:</strong> Aplica conceitos da física para entender sistemas químicos.</li>
+                <li><strong>Química Analítica:</strong> Estuda a composição da matéria e a medição de suas substâncias.</li>
+            </ul>
+        </section>
+
+        <!-- Seção: Curiosidades -->
+        <section id="curiosidades" class="card">
+            <h2>Curiosidades Químicas</h2>
+            <p id="curiosidade-texto">Clique no botão abaixo para descobrir algo fascinante!</p>
+            <button onclick="gerarCuriosidade()">Ver Curiosidade</button>
+        </section>
+
+        <!-- Seção Interativa -->
+        <section id="pesquisa" class="card">
+            <h2>Procurar Símbolo Químico</h2>
+            <div class="busca-box">
+                <input type="text" id="input-elemento" placeholder="Digite o nome (ex: Ouro, Oxigênio)...">
+                <button onclick="buscarSimbolo()">Buscar</button>
+            </div>
+            <p id="resultado-busca"></p>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 - Projeto de Química Aberto | Criado para estudos no VS Code</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
